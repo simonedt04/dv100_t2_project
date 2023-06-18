@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build A Sub</title>
+    <title>Build a Sub!</title>
 
      <!--External Files-->
 
@@ -54,98 +54,109 @@
           </nav>
     </header>
 
+    <br>
+
+
     <div class="container">
-      <h1 class="display-4">Build your own SuperSub</h1>
+      <h1 class="display-4">Build your own Sub! </h1>
       <hr class="my-4">
-      <p>Customize your sub sandwich! Choose whatever toppings you'd like and give your sub sandwich a name!.</p>
+      <p>Customize your sub sandwich! Choose whatever bread and toppings you'd like and give 
+        your sub sandwich a fun and unique name.</p>
     </div>
-  </div>
+ 
 
   <div class="container">
     <form style="margin-top: 50px;" id="subForm">
-      <h2>Build your own Sub</h2>
+      <h3>Build your unique sub below!</h3>
+      <br>
       <div class="form-group">
         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your Name">
       </div>
+      <br>
       <div class="form-group">
-        <input type="text" class="form-control" id="subName" placeholder="Sub Name" required>
+        <input type="text" class="form-control" id="subName" placeholder="Name your Sub" required>
       </div>
     
-    <section>  
-      <div class="base-options">
+      <br>
+     
+
+      <!--Bread options-->
+      <div class="row"> 
+        <div class="col-12">
+          <div class="base-options">
  
-        <!--Bread options-->
-        <h5>Bread</h5>
-        <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="whitebread" value="20" onchange="calculateSubCost()" checked="">
-          <label class="form-check-label" for="whitebread">
-            White Bread 
-          </label>
-        </div>
+            <h5>Bread Options</h5>
 
-        <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="brownbread" value="25" onchange="calculateSubCost()">
-          <label class="form-check-label" for="brownbread">
-            Brown Bread 
-          </label>
-        </div>
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="whitebread" value="20" onchange="calculateSubCost()" checked="">
+              <label class="form-check-label" for="whitebread">
+                White Bread 
+              </label>
+            </div>
+    
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="brownbread" value="25" onchange="calculateSubCost()">
+              <label class="form-check-label" for="brownbread">
+                Brown Bread 
+              </label>
+            </div>
+    
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="baguette" value="20" onchange="calculateSubCost()">
+              <label class="form-check-label" for="baguette">
+                Baguette 
+              </label>
+            </div>
+    
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="rye" value="30" onchange="calculateSubCost()">
+              <label class="form-check-label" for="rye">
+                Rye Bread 
+              </label>
+            </div>
 
-        <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="baguette" value="20" onchange="calculateSubCost()">
-          <label class="form-check-label" for="baguette">
-            Baguette 
-          </label>
-        </div>
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="ciabatta" value="25" onchange="calculateSubCost()">
+              <label class="form-check-label" for="ciabatta">
+                Ciabatta 
+              </label>
+            </div>
 
-        <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="rye" value="30" onchange="calculateSubCost()">
-          <label class="form-check-label" for="rye">
-            Rye Bread 
-          </label>
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="farmloaf" value="30" onchange="calculateSubCost()">
+              <label class="form-check-label" for="farmloaf">
+                Farmhouse Loaf 
+              </label>
+            </div>
+
+            <div class="bread-check">
+              <input class="form-check-input" type="radio" name="baseRadio" id="sourdough" value="30" onchange="calculateSubCost()">
+              <label class="form-check-label" for="sourdough">
+                Sourdough Bread 
+              </label>
+            </div>
+
+          </div>
+    
+          </div>
         </div>
       </div>
-
-      <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="ciabatta" value="25" onchange="calculateSubCost()">
-          <label class="form-check-label" for="ciabatta">
-            Ciabatta 
-          </label>
-        </div>
-      </div>
-
       
 
-      <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="farmloaf" value="30" onchange="calculateSubCost()">
-          <label class="form-check-label" for="farmloaf">
-            Farmhouse Loaf 
-          </label>
-        </div>
-      </div>
+      
+      
 
-      <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="sourdough" value="30" onchange="calculateSubCost()">
-          <label class="form-check-label" for="sourdough">
-            Sourdough Bread 
-          </label>
-        </div>
-      </div>
-
-      <div class="bread-check">
-          <input class="form-check-input" type="radio" name="baseRadio" id="seedbread" value="30" onchange="calculateSubCost()">
-          <label class="form-check-label" for="seedbread">
-            Seeded Bread
-          </label>
-        </div>
+      
+     
 
     </div>
     
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
     <!--meat topping options-->
       <div class="toppings-meat">
-        <h5>Meat</h5>
+        <h5>Meat Options</h5>
 
         <div class="top-check">
           <input class="form-check-input" name="toppings" type="checkbox" value="20" id="topping1" onchange="calculateSubCost()">
@@ -291,7 +302,7 @@
 
       <!--veggie toppings options-->
       <div class="toppings-veg">
-          <h5>Toppings</h5>
+          <h5>Veggie Topping Options</h5>
 
           <div class="top-check">
             <input class="form-check-input" name="toppings" type="checkbox" value="10" id="topping1" onchange="calculateSubCost()">
@@ -442,9 +453,9 @@
 
         </div>
 
-        <!--cheese selection-->
+        <!--cheese options-->
       <div class="toppings-cheese">
-          <h5>Cheese</h5>
+          <h5>Cheese Options</h5>
 
           <div class="top-check">
             <input class="form-check-input" name="toppings" type="checkbox" value="15" id="topping1" onchange="calculateSubCost()">
@@ -517,11 +528,12 @@
           </div>
 
         </div>
+        <br>
       
     
-    <!--sauce selection-->
+    <!--sauce options-->
       <div class="sauce">
-        <h5>Sauces</h5>
+        <h5>Sauce Options</h5>
 
           <div class="sauces">
             <input class="form-check-input" name="sauce" type="checkbox" value="10" id="sauce1" onchange="calculateSubCost()">
@@ -610,7 +622,9 @@
       </div>
     </form>
 
-      <!--Cost of sub-->   
+    <br>
+
+      <!--Sub-cost of sub-->   
           <div>
             <label for="subCost">Sub Cost:</label>
             <span id="subCost">R 0.00</span>
@@ -622,10 +636,10 @@
           <br>
       </div>
     </form>
-
+  </div>
     
 
-<script src="../js/BuildaSub.js"></script>
+
 
     
     
